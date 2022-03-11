@@ -1,7 +1,3 @@
-const emoji = require('node-emoji');
-const yes = emoji.get('white_check_mark');
-const no = emoji.get('red_circle');
-
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -17,11 +13,10 @@ const eqArrays = function(arr1, arr2) {
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`${yes}${yes}${yes} Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`${no}${no}${no} Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
-
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS

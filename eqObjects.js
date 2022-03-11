@@ -1,14 +1,11 @@
-const yes = "✅";
-const no = "🔴";
-
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
-    return false
+    return false;
   } else {
     for (let x = 0; x < arr1.length; x++) {
       if (arr1[x] !== arr2[x]) {
-        return false
-      };
+        return false;
+      }
     }
     return true;
   }
@@ -16,9 +13,9 @@ const eqArrays = function(arr1, arr2) {
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`${yes}${yes}${yes} Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`${no}${no}${no} Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 

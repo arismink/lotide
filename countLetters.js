@@ -1,11 +1,8 @@
-const yes = "✅";
-const no = "🔴";
-
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`${yes}${yes}${yes} Assertion Passed: ${actual} === ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`${no}${no}${no} Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 

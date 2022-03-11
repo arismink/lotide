@@ -1,10 +1,4 @@
 // start 4:27pm
-
-const emoji = require('node-emoji');
-const yes = emoji.get('white_check_mark');
-const no = emoji.get('red_circle');
-
-
 const tail = function(array) {
   let newArr = [];
   for (let x = 1; x < array.length; x++) {
@@ -15,9 +9,9 @@ const tail = function(array) {
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`${yes}${yes}${yes} Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`${no}${no}${no} Assertion Failed: ${actual} !=== ${expected}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 

@@ -1,6 +1,3 @@
-const yes = "✅";
-const no = "🔴";
-
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false
@@ -39,9 +36,9 @@ const eqObjects = function(object1, object2) {
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect; 
   if ((actual, expected)) {
-    console.log(`${yes}${yes}${yes} Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
+    console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    console.log(`${no}${no}${no} Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+    console.log(`🔴🔴🔴 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
 
