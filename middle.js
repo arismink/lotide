@@ -1,10 +1,3 @@
-
-const eqArrays = require('./eqArrays');
-
-const assertArraysEqual = require('./assertArraysEqual');
-
-// function returns array of middle element
-
 const middle = function(numArray) {
   let numLength = numArray.length;
   let answer = [];
