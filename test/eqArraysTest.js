@@ -1,5 +1,5 @@
-const assertEqual = require('../assertEqual.js');
-const eqArrays = require('../eqArrays.js');
+const assertEqual = require('../assertEqual');
+const eqArrays = require('../eqArrays');
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 3, 3], [1, 2, 3]), false);
