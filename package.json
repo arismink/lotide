@@ -1,0 +1,26 @@
+{
+  "name": "@arismink/lotide",
+  "version": "1.0.0",
+  "description": "LHL project. @arismink attempt of recreating some of the functions within the Lodash library.",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arismink/lotide.git"
+  },
+  "author": "KL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arismink/lotide/issues"
+  },
+  "homepage": "https://github.com/arismink/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
+  }
+}
